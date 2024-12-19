@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Chapter 02</title>
+    <link rel="stylesheet" href="/boostarp.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(to right, rgb(67, 72, 151), rgb(126, 188, 126));
+        }
+
+        .string {
+            font-size: 18px;
+            color: white;
+        }
+
+        p,
+        button {
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 15px;
+            background: linear-gradient(to right, rgb(55, 104, 97), rgb(171, 210, 200));
+            color: black;
+            border: none;
+            box-shadow: 5px 5px 10px black;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 style="color: black; text-align: center; font-size: 40px; font-weight: bold; margin: 20px;">CHAPTER 02 <SPAN
+                style="color: rgb(111, 10, 126);">VARIABLES FOR STRINGS</SPAN></h1>
+
+
+        <div class="string">
+
+            <div>
+                <p class="fw-bold">1. Declare a variable called username.</p>
+                <button onclick="username()">Click me to See Alert</button>
+            </div>
+
+            <div>
+                <p class="fw-bold">2. Declare a variable called myName & assign to it a string
+                    that represents your Full Name.</p>
+                <button onclick="fullname()">Click me to See Alert</button>
+            </div>
+
+            <div>
+                <p class="fw-bold">3. Write script to</p>
+                <p>a. Declare a JS variable, titled message.</p>
+                <p>b. Assign “Hello World” to variable message</p>
+                <p>c. Display the message in alert box</p>
+                <button onclick="message()">Click me to See Alert</button>
+            </div>
+
+
+            <div>
+                <p class="fw-bold">4. Write a script to save student’s bio data in JS variables and
+                    show the data in alert boxes.</p>
+                <button onclick="bio()">Click me to See Alert</button>
+            </div>
+
+            <div>
+                <p class="fw-bold">5. Write a script to display the following alert using one JS
+                    variable:</p>
+                <button onclick="pizza()">Click me to See Alert</button>
+            </div>
+
+            <div>
+                <p class="fw-bold">6. Declare a variable called email and assign to it a string that
+                    represents your Email Address(e.g. example@example.com).
+                    Show the blow mentioned message in an alert box.</p>
+                <button onclick="email()">Click me to See Alert</button>
+            </div>
+
+            <div>
+                <p class="fw-bold">7. Declare a variable called book & give it the value “A
+                    smarter way to learn JavaScript”. Display the following
+                    message in an alert box:</p>
+                <button onclick="book()">Click me to See Alert</button>
+            </div>
+
+            <div>
+                <p class="fw-bold">8. Write a script to display this in browser through JS</p>
+                <button onclick="html()">Click me to See on Browser</button>
+            </div>
+
+            <div>
+                <p class="fw-bold">9. Store following string in a variable and show in alert and
+                    browser through JS</p>
+                <button onclick="fun()">Click me to See Alert</button>
+                <button onclick="funb()">Click me to See on Browser</button>
+            </div>
+
+            <div class="d-flex justify-content-md-end align-items-center gap-2">
+                <img style="height: 20px; rotate: 180deg;" src="../Images/arrow-right-solid.svg" alt="arrow image"> 
+                <a class="text-decoration-none text-black fw-bolder fs-5" href="/index.html">Previous Chapter</a>
+                <a class="text-decoration-none text-black fw-bolder fs-5" href="chapter3.html">Next Chapter</a>
+                <img style="height: 20px;" src="../Images/arrow-right-solid.svg" alt="arrow image"> 
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="../Javascript_Files/chaptertwo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Chapter 06</title>
+    <link rel="stylesheet" href="/boostarp.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(to right, rgb(126, 188, 126), rgb(67, 72, 151));
+            color: white;
+            font-size: 20px;
+        }
+
+        p,
+        span,
+        button {
+            margin: 10px;
+        }
+
+        button {
+            padding: 5px;
+            border-radius: 15px;
+            background: linear-gradient(to right, rgb(55, 104, 97), rgb(171, 210, 200));
+            color: black;
+            border: none;
+            box-shadow: 5px 5px 10px black;
+            font-weight: bolder;
+        }
+
+        input {
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+            <h1 class="fw-bold fs-2 text-center mt-3 text-black">CHAPTER 06 <span style="color: rgb(128, 0, 122);"> MATH
+                    EXPRESSIONS</span> </h1>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold"> 1. Write a program to take a number in a variable, do the
+                required arithmetic to display the following result in your browser: </p>
+            <button onclick="question01()">Click me to See Result</button>
+        </div>
+
+
+        <div>
+            <p class="fw-bold"> 2. What will be the output in variables a, b & result after
+                execution of the following script: <br>
+                var a = 2, b = 1;
+                var result = --a - --b + ++b + b--; </p>
+            <button onclick="question02()">Click me to See Result</button>
+        </div>
+
+
+        <div>
+            <p class="fw-bold"> 3. Write a program that takes input a name from user & greet the user. </p>
+            <div class="d-flex align-items-center">
+                <input type="text" placeholder="Enter Your Name" id="userName">
+                <button onclick="question03()">Submit</button>
+                <p class="fw-bold" id="greeting"></p>
+            </div>
+        </div>
+
+
+
+        <!-- <div>
+            <p class="fw-bold">6. Take? </p>
+            <p>a. Take three subjects name from user and store them in 3 different variables.</p>
+            <p>b. Total marks for each subject is 100, store it in another variable.?”</p>
+            <p>c. Take obtained marks for first subject from user and stored it in different variable.</p>
+            <p>d. Take obtained marks for remaining 2 subjects from user and store them in variables.</p>
+            <p>e. Now calculate total marks and percentage and show the result in browser like this.(Hint: user table)</p>
+            <button onclick="question06()">Click me to See Result</button>
+        </div> -->
+
+
+
+        <div class="d-flex justify-content-md-end align-items-center gap-2">
+            <img style="height: 20px; rotate: 180deg;" src="../Images/arrow-right-solid.svg" alt="arrow image">
+            <a class="text-decoration-none text-black fw-bolder fs-5" href="chapter5.html">Previous Chapter</a>
+            <a class="text-decoration-none text-black fw-bolder fs-5" href="chapter7.html">Next Chapter</a>
+            <img style="height: 20px;" src="../Images/arrow-right-solid.svg" alt="arrow image">
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="../Javascript_Files/chaptersix.js"></script>
+</body>
+
+</html>
