@@ -151,3 +151,92 @@ function question06() {
     document.write(`<h3> Remarks: ${remarks} </h3> `);
 
 }
+
+
+
+//Question 07
+function question07() {
+
+    let secretNumber = 6;
+    let user = +prompt("Guess the number between 1 to 10");
+
+    if (user === 6) {
+        result = (`Bingo Correct Answer`)
+    } else {
+        result = (`Soory try again`)
+    }
+
+    alert(result)
+
+}
+
+
+
+
+//Question 08
+
+function question08() {
+    let number = +prompt("Give a number to check if it is divided by 3 or not")
+
+    if (number % 3 === 0) {
+        alert("Number is divisible by 3")
+    } else {
+        alert("Number is not divisible by 3")
+    }
+}
+
+
+//Question 09
+
+function question09() {
+    let givenNumber = +prompt("Give a number to check even or odd")
+
+    if (givenNumber % 2 === 0) {
+        alert("Number is even")
+    } else {
+        alert("Number is odd")
+    }
+}
+
+
+
+//Question 10
+
+function question10() {
+
+    let temperature = +prompt("Enter a Temperature")
+
+    if (temperature >= 40) {
+        alert("It is too hot outside.")
+    } else if (temperature >= 30) {
+        alert("The Weather today is Normal.")
+    } else if (temperature >= 20) {
+        alert("Today’s Weather is cool.")
+    } else if (temperature >= 1) {
+        alert("OMG! Today’s weather is so Cool.")
+    } else {
+        alert("Enter a Temperature")
+    }
+}
+
+
+function question11() {
+    let num1 = prompt("Enter your first number")
+    let operator = prompt("Enter the operator (+, -, /, *)")
+    let num2 = prompt("Enter your Second number")
+
+   if(operator === "+"){
+    alert(+num1 + +num2)
+   }
+   if(operator === "-"){
+    alert(num1 - num2)
+   }
+   if(operator === "*"){
+    alert(num1 * num2)
+   }
+   if(operator === "/"){
+    alert(num1 / num2)
+   }
+
+}
+

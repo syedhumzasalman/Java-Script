@@ -47,7 +47,7 @@
             border: 1px solid black;
         }
 
-        .traficbutton{
+        .traficbutton {
             background-color: red !important;
             padding: 5px;
             border-radius: 15px;
@@ -57,10 +57,12 @@
             font-weight: bolder;
             width: 200px
         }
-        .colo{
+
+        .colo {
             background-color: yellow !important;
         }
-        .color2{
+
+        .color2 {
             background-color: green !important;
         }
     </style>
@@ -79,7 +81,7 @@
             <p class="fw-bold"> 1. Write a program to take “city” name as input from user. If
                 user enters “Karachi”, welcome the user like this: “Welcome to city of lights” </p>
             <input class="myinput" type="text" placeholder="Enter City Name" id="city"> <br>
-            <button class = "mybutton" type="button" onclick="question01()">Click me to See Result</button>
+            <button class="mybutton" type="button" onclick="question01()">Click me to See Result</button>
             <p class="fw-bolder text-black" id="greeting"></p>
         </div>
 
@@ -89,7 +91,7 @@
                 user is male, give the message: Good Morning Sir. If the
                 user is female, give the message: Good Morning Ma’am. </p>
             <input class="myinput" type="text" placeholder="Enter your Gender" id="gender"> <br>
-            <button class = "mybutton" type="button" onclick="question02()">Click me to See Result</button>
+            <button class="mybutton" type="button" onclick="question02()">Click me to See Result</button>
             <p class="fw-bolder text-black" id="gendername"></p>
         </div>
 
@@ -98,14 +100,11 @@
             <p class="fw-bold">3. Write a program to take input color of road traffic signal
                 from the user & show the message according to this table:</p>
             <div>
-                <button class = "traficbutton"
-                 type="button" onclick="red()">Red</button>
+                <button class="traficbutton" type="button" onclick="red()">Red</button>
                 <span id="message1"></span><br>
-                <button class = "traficbutton colo"
-                 type="button" onclick="yellow()">Yellow</button>
+                <button class="traficbutton colo" type="button" onclick="yellow()">Yellow</button>
                 <span id="message2"></span><br>
-                <button class = "traficbutton color2"
-                 type="button" onclick="green()">Green</button>
+                <button class="traficbutton color2" type="button" onclick="green()">Green</button>
                 <span id="message3"></span><br>
             </div>
         </div>
@@ -115,7 +114,7 @@
             <p class="fw-bold"> 4. Write a program to take input remaining fuel in car (in
                 litres) from user. If the current fuel is less than 0.25litres,
                 show the message “Please refill the fuel in your car”</p>
-            <button class = "mybutton" type="button" onclick="question04()">Click me to Check Fuel</button>
+            <button class="mybutton" type="button" onclick="question04()">Click me to Check Fuel</button>
             <p class="fw-bolder text-black" id="gendername"></p>
         </div>
 
@@ -128,16 +127,15 @@
                 if (++a === 5){
                 alert("given condition for variable a is true");
                 }</p>
-            <button class = "mybutton" type="button" onclick="q11()">Click me to See Result</button>
+            <button class="mybutton" type="button" onclick="q11()">Click me to See Result</button>
             <p>b. var b = 82;
                 if (b++ === 83){
                 alert("given condition for variable b is true");
                 }</p>
-            <button class = "mybutton" type="button" onclick="q12()">Click me to See Result</button>
+            <button class="mybutton" type="button" onclick="q12()">Click me to See Result</button>
             <p>c. var c = 12
-                if (c++ === 13) if (c === 13) if (++c < 14) if(c === 14)
-            </p>
-            <button class = "mybutton" type="button" onclick="q13()">Click me to See Result</button>
+                if (c++ === 13) if (c === 13) if (++c < 14) if(c===14) </p>
+                    <button class="mybutton" type="button" onclick="q13()">Click me to See Result</button>
         </div>
 
 
@@ -146,35 +144,60 @@
                 subjects & total marks. Compute & show the resulting
                 percentage on your page. Take percentage & compute
                 grade as per following table:</p>
-            <button class = "mybutton" type="button" onclick="question06()">Click me to See Result</button>
+            <button class="mybutton" type="button" onclick="question06()">Click me to See Result</button>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold"> 7. Guess game: Store a secret number (ranging from 1 to 10) in a variable.
+                Prompt user to guess the secret number</p>
+            <p>a. If user guesses the same number, show “Bingo! Correct answer”.</p>
+            <p>b. If the guessed number +1 is the secret number, show “Close enough to the correct answer”.</p>
+            <button class="mybutton" type="button" onclick="question07()">Click me to See Result</button>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold">8. Write a program to check whether the given number is
+                divisible by 3. Show the message to the user if the number is divisible by 3</p>
+            <button class="mybutton" type="button" onclick="question08()">Click me to See Result</button>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold">9. Write a program that checks whether the given input is an
+                even number or an odd number?</p>
+            <button class="mybutton" type="button" onclick="question09()">Click me to See Result</button>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold"> 10. Write a program that takes temperature as input and
+                shows a message based on following criteria</p>
+            <p>a. T > 40 then “It is too hot outside.”</p>
+            <p>b. T > 30 then “The Weather today is Normal.”</p>
+            <p>c. T > 20 then “Today’s Weather is cool.”</p>
+            <p>d. T > 10 then “OMG! Today’s weather is so Cool.”</p>
+            <button class="mybutton" type="button" onclick="question10()">Click me to See Result</button>
         </div>
 
 
 
+        <div class="mt-5">
+            <p class="fw-bold"> 11. Write a program to create a calculator for +,-,*, / & %
+                using if statements. Take the following input:</p>
+            <p>a. First number</p>
+            <p>b. Second number</p>
+            <p>c. Operation (+, -, *, /, %)</p>
+            <p>d. Compute & show the calculated result to user.</p>
+            <button class="mybutton" type="button" onclick="question11()">Click me to See Result</button>
+        </div>
 
 
 
+        <div class="d-flex justify-content-md-end align-items-center gap-2">
+            <img style="height: 20px; rotate: 180deg;" src="../Images/arrow-right-solid.svg" alt="arrow image">
+            <a class="text-decoration-none text-black fw-bolder fs-5" href="chapter6.html">Previous Chapter</a>
+            <a class="text-decoration-none text-black fw-bolder fs-5" href="chapter12.html">Next Chapter</a>
+            <img style="height: 20px;" src="../Images/arrow-right-solid.svg" alt="arrow image">
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-            <div class="d-flex justify-content-md-end align-items-center gap-2">
-                <img style="height: 20px; rotate: 180deg;" src="../Images/arrow-right-solid.svg" alt="arrow image">
-                <a class="text-decoration-none text-black fw-bolder fs-5" href="chapter6.html">Previous Chapter</a>
-                <a class="text-decoration-none text-black fw-bolder fs-5" href="chapter11.html">Next Chapter</a>
-                <img style="height: 20px;" src="../Images/arrow-right-solid.svg" alt="arrow image">
-            </div>
-        
     </div>
 
 

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Chapter 12-13</title>
+    <link rel="stylesheet" href="/boostarp.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(to right, rgb(126, 188, 126), rgb(67, 72, 151));
+            color: white;
+            font-size: 20px;
+        }
+
+        p,
+        span,
+        button {
+            margin: 10px;
+        }
+
+        .mybutton {
+            padding: 5px;
+            border-radius: 15px;
+            background: linear-gradient(to right, rgb(55, 104, 97), rgb(171, 210, 200));
+            color: black;
+            border: none;
+            box-shadow: 5px 5px 10px black;
+            font-weight: bolder;
+        }
+
+        input {
+            border-radius: 5px;
+            border: none;
+        }
+
+        .myinput {
+            box-shadow: 5px 5px 10px black;
+            border: 1px solid black;
+        }
+
+        .traficbutton {
+            background-color: red !important;
+            padding: 5px;
+            border-radius: 15px;
+            color: black;
+            border: none;
+            box-shadow: 5px 5px 10px black;
+            font-weight: bolder;
+            width: 200px
+        }
+
+        .colo {
+            background-color: yellow !important;
+        }
+
+        .color2 {
+            background-color: green !important;
+        }
+
+        .password {
+            background-color: black;
+            color: black;
+            padding: 8px;
+        }
+
+        .password:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+            <h1 class="fw-bold fs-2 text-center mt-3 text-black">CHAPTER 12-13 <span style="color: rgb(128, 0, 122);">
+                    IF…ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS</span> </h1>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold">1. Write a program that takes a character (number or string)
+                in a variable & checks whether the given input is a number, uppercase letter or lower case letter.
+                (Hint: ASCII codes:- A=65, Z=90, a=97, z=122). </p>
+            <button class="mybutton" type="button" onclick="question01()">Click me to See Result</button>
+        </div>
+
+
+        <div class="mt-5">
+            <p class="fw-bold">2. Write a JavaScript program that accept two integers and
+                display the larger. Also show if the two integers are equal.</p>
+            <button class="mybutton" type="button" onclick="question02()">Click me to See Result</button>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold">3. Write a program that takes input a number from user &
+                state whether the number is positive, negative or zero.</p>
+            <button class="mybutton" type="button" onclick="question03()">Click me to See Result</button>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold">4. Write a program that takes a character (i.e. string of
+                length 1) and returns true if it is a vowel, false otherwise.</p>
+            <button class="mybutton" type="button" onclick="question04()">Click me to See Result</button>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold">5. Write a program that</p>
+            <P>a. Store correct password in a JS variable. Hover Here to see Correct Password <img
+                    src="../Images/arrow-right-solid.svg" alt="arrow" height="30px"> <span
+                    class="password">pakistan123</span></P>
+            <P>b. Asks user to enter his/her password</P>
+            <P>c. Validate the two passwords:</P>
+            <P>i. Check if user has entered password. If not, then give message “ Please enter your password”</P>
+            <P>ii. Check if both passwords are same. If they are
+                same, show message “Correct! The password you entered matches the original password”.
+                Show “Incorrect password” otherwise.</P>
+            <button class="mybutton" type="button" onclick="question05()">Click me to See Result</button>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold">6. This if/else statement does not work. Try to fix it:</p>
+            <p>var greeting;</p>
+            <p>var hour = 13;</p>
+            <p>if (hour  &#60; 18) &#123;</p>
+            <p>greeting = "Good day";</p>
+            <p>else</p>
+            <P>greeting = "Good evening";</P>
+            <P>&#125;</P>
+            <button class="mybutton" type="button" onclick="question06()">Click me to See Result</button>
+        </div>
+
+        <div class="mt-5">
+            <p class="fw-bold">7. Write a program that takes time as input from user in 24
+                hours clock format like: 1900 = 7pm. Implement the
+                following case using if, else & else if statements</p>
+            <button class="mybutton" type="button" onclick="question07()">Click me to See Result</button>
+        </div>
+
+
+
+
+        <div class="d-flex justify-content-md-end align-items-center gap-2">
+            <img style="height: 20px; rotate: 180deg;" src="../Images/arrow-right-solid.svg" alt="arrow image">
+            <a class="text-decoration-none text-black fw-bolder fs-5" href="chapter9.html">Previous Chapter</a>
+            <a class="text-decoration-none text-black fw-bolder fs-5" href="chapter13.html">Next Chapter</a>
+            <img style="height: 20px;" src="../Images/arrow-right-solid.svg" alt="arrow image">
+        </div>
+
+    </div>
+
+
+
+    <script src="../Javascript_Files/chaptertwelve.js"></script>
+</body>
+
+</html>
